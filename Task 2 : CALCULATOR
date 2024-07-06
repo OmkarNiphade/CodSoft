@@ -42,3 +42,46 @@ def calculator():
         print("Invalid input")
 
 calculator()
+
+'''
+OUTPUT:
+Select operation:
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+Enter choice(1/2/3/4): 1
+Enter first number: 5
+Enter second number: 2
+5.0 + 2.0 = 7.0
+
+Select operation:
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+Enter choice(1/2/3/4): 2
+Enter first number: 5
+Enter second number: 2
+5.0 - 2.0 = 3.0
+
+Select operation:
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+Enter choice(1/2/3/4): 3
+Enter first number: 5
+Enter second number: 2
+5.0 * 2.0 = 10.0
+
+Select operation:
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+Enter choice(1/2/3/4): 4
+Enter first number: 5
+Enter second number: 2
+5.0 / 2.0 = 2.5
+'''
