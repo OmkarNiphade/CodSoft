@@ -43,6 +43,9 @@ def calculator():
 
 calculator()
 
+
+
+
 '''
 OUTPUT:
 Select operation:
