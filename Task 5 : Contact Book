@@ -1,0 +1,53 @@
+'''
+Contact Information: Store name, phone number, email, and address for each contact.
+Add Contact: Allow users to add new contacts with their details.
+View Contact List: Display a list of all saved contacts with names and phone numbers.
+Search Contact: Implement a search function to find contacts by name or phone number.
+Update Contact: Enable users to update contact details.
+Delete Contact: Provide an option to delete a contact.
+User Interface: Design a user-friendly interface for easy interaction.
+'''
+
+
+
+
+names = []
+contact_numbers = []
+num = int(input("Enter the total number of contacts you want to save: "))
+for i in range(num):
+    name = input("Name: ")
+    contact_number = int(input("Contact Number: ")) 
+    names.append(name)
+    contact_numbers.append(contact_number)
+print("\nName\t\t\tContact Number\n")
+for i in range(num):
+    print("{}\t\t\t{}".format(names[i], contact_numbers[i]))
+search_term = input("\nEnter search term: ")
+print("Search result:")
+if search_term in names:
+    index = names.index(search_term)
+    contact_number = contact_numbers[index]
+    print("Name: {}, Phone Number: {}".format(search_term, contact_number))
+else:
+    print("No records")
+
+
+
+
+'''
+OUTPUT:
+Enter the total number of contacts you want to save: 2
+Name: Omkar
+Contact Number: 9923044628
+Name: om
+Contact Number: 7795624388
+
+Name                    Contact Number
+
+Omkar                   9923044628
+om                      7795624388
+
+Enter search term: om
+Search result:
+Name: om, Phone Number: 7795624388
+'''
